@@ -82,7 +82,7 @@ dial_tool = s:taboption("advanced", ListValue, "dial_tool", translate("Dial Tool
 dial_tool.description = translate("After switching the dialing tool, it may be necessary to restart the module or restart the router to recognize the module.")
 dial_tool.rmempty = true
 dial_tool:value("", translate("Auto Choose"))
-dial_tool:value("quectel-CM", translate("quectel-CM"))
+dial_tool:value("quectel-cm", translate("quectel-cm"))
 dial_tool:value("mmcli", translate("mmcli"))
 
 -- 网络类型
@@ -104,6 +104,12 @@ apn = s:taboption("advanced", Value, "apn", translate("APN"))
 apn.default = ""
 apn.rmempty = true
 apn:value("", translate("Auto Choose"))
+apn:value("fast.t-mobile.com", translate("T-Mobile"))
+apn:value("pcweb.tmobile.com", translate("T-Mobile Hotspot"))
+apn:value("NRPHONE", translate("AT&T 5G Standalone"))
+apn:value("ENHANCEDPHONE", translate("AT&T 5G"))
+apn:value("NXTGENPHONE", translate("AT&T LTE"))
+apn:value("VZWINTERNET", translate("Verizon"))
 apn:value("cmnet", translate("China Mobile"))
 apn:value("3gnet", translate("China Unicom"))
 apn:value("ctnet", translate("China Telecom"))
