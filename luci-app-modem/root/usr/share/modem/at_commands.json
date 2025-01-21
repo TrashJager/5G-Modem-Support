@@ -3,8 +3,6 @@
 		"general":[
 			{"Modem Info > ATI":"ATI"},
 			{"SIM Card Status > AT+CPIN?":"AT+CPIN?"},
-			{"LTE Network Quality > AT+CSQ":"AT+CSQ"},
-			{"5G Network Quality > AT+CESQ":"AT+CESQ"},
 			{"Network Info  > AT+COPS?":"AT+COPS?"},
 			{"SIM PDP Context > AT+CGDCONT?":"AT+CGDCONT?"},
 			{"PDP Address > AT+CGPADDR":"AT+CGPADDR"},
@@ -20,8 +18,7 @@
 				{"SIM Card Status > AT+QSIMSTAT?":"AT+QSIMSTAT?"},
 				{"Switch to SIM1 > AT+QUIMSLOT=1":"AT+QUIMSLOT=1"},
 				{"Switch to SIM2 > AT+QUIMSLOT=2":"AT+QUIMSLOT=2"},
-				{"Network Info > AT+QNWINFO":"AT+QNWINFO"},
-				{"CA Info > AT+QCAINFO":"AT+QCAINFO"},
+				{"Network Info > AT+QNWINFO;+QCAINFO":"AT+QNWINFO;+QCAINFO"},
 				{"LTE Bands > AT+QNWPREFCFG=\"lte_band\"":"AT+QNWPREFCFG=\"lte_band\""},
 				{"5G NSA Bands > AT+QNWPREFCFG=\"nsa_nr5g_band\"":"AT+QNWPREFCFG=\"nsa_nr5g_band\""},
 				{"5G SA Bands > AT+QNWPREFCFG=\"nr5g_band\"":"AT+QNWPREFCFG=\"nr5g_band\""},
