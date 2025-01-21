@@ -110,11 +110,6 @@ apn:value("NRPHONE", translate("AT&T 5G Standalone"))
 apn:value("ENHANCEDPHONE", translate("AT&T 5G"))
 apn:value("NXTGENPHONE", translate("AT&T LTE"))
 apn:value("VZWINTERNET", translate("Verizon"))
-apn:value("cmnet", translate("China Mobile"))
-apn:value("3gnet", translate("China Unicom"))
-apn:value("ctnet", translate("China Telecom"))
-apn:value("cbnet", translate("China Broadcast"))
-apn:value("5gscuiot", translate("Skytone"))
 
 auth = s:taboption("advanced", ListValue, "auth", translate("Authentication Type"))
 auth.default = "none"
