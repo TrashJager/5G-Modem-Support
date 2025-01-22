@@ -13,7 +13,7 @@ PKF_MAINTAINER:=Siriling <siriling@qq.com>
 LUCI_DEPENDS:=+luci-compat \
 		+kmod-usb2 +kmod-usb3 \
 		+kmod-usb-ohci \
-		+kmod-usb-uhci
+		+kmod-usb-uhci \
 		+kmod-usb-serial-option +kmod-usb-serial +kmod-usb-serial-qualcomm \
 		+kmod-usb-net +kmod-usb-acm \
 		+kmod-usb-wdm +kmod-usb-net-qmi-wwan \
