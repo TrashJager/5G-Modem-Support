@@ -8,21 +8,19 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=qfirehose
-LUCI_TITLE:=Quectel flash utility
-PKG_VERSION:=1.4.21
+PKG_VERSION:=1.14.21
 PKG_RELEASE:=1
-PKG_LICENSE_FILES:=NOTICE
+
 PKG_FLAGS:=nonshared
 
 include $(INCLUDE_DIR)/package.mk
 
 define Package/qfirehose
-  SECTION:=utils
-  TITLE:=Quectel flash utility
-endef
-
-define Package/qfirehose/description
- Quectel FireHose
+  SECTION:=net
+  CATEGORY:=Network
+  SUBMENU:=WWAN
+  TITLE:=Quectel Firehose Update Utility
+  DEPENDS:= +unzip +kmod-usb2 +kmod-usb3 +kmod-usb-ohci +kmod-usb-uhci +kmod-usb-serial-option +kmod-usb-serial +kmod-usb-serial-qualcomm
 endef
 
 define Build/Compile
@@ -33,7 +31,7 @@ endef
 
 define Package/qfirehose/install
 	$(INSTALL_DIR) $(1)/usr/bin
-	$(INSTALL_BIN) $(PKG_BUILD_DIR)/qfirehose $(1)/usr/bin/QFirehose
+	$(INSTALL_BIN) $(PKG_BUILD_DIR)/qfirehose $(1)/usr/bin/qfirehose
 endef
 
 $(eval $(call BuildPackage,qfirehose))
